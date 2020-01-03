@@ -5,10 +5,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.io.File;
-import java.util.concurrent.TimeUnit;
 
 public class ValidLoginTest extends AbstractParentTest {
     WebDriver webDriver;
@@ -27,8 +23,6 @@ public class ValidLoginTest extends AbstractParentTest {
         webDriver.findElement(By.id("submit-button")).click();
 
         Assert.assertTrue("Нет Статуса авторизирЮзера", isLogonStatusPresent());
-
-
     }
 
     private boolean isLogonStatusPresent() {
@@ -39,7 +33,6 @@ public class ValidLoginTest extends AbstractParentTest {
        }
 
     }
-
 
 }
 
