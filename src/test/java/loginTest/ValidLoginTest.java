@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.File;
 import java.util.concurrent.TimeUnit;
 
-public class ValidLogin extends AbstractParentTest {
+public class ValidLoginTest extends AbstractParentTest {
     WebDriver webDriver;
 
     @Test
@@ -22,7 +22,7 @@ public class ValidLogin extends AbstractParentTest {
         webDriver.findElement(By.name("UserOnlyName")).sendKeys("qasushyi\\sushyi");
 
         webDriver.findElement(By.name("UserOnlyPassword")).clear();
-        webDriver.findElement(By.name("UserOnlyPassword")).sendKeys("Nirvana123y");
+        webDriver.findElement(By.name("UserOnlyPassword")).sendKeys("Nirvana123");
 
         webDriver.findElement(By.id("submit-button")).click();
 
